@@ -1,0 +1,290 @@
+@media(max-width:400px){
+
+
+    /* Top nav design  */
+    #top_nav{
+        .nav_wrapper{
+            .contact_side{
+                margin: 0 auto;
+            }
+        }
+    }
+
+
+    /* hero area  */
+    #hero__area{
+        .hero-right-side{
+            .green-car{
+                width: 300px !important;
+            }
+        }
+    }
+
+
+    /* testimonial area  */
+    #testimonial{
+        width: 100%;
+
+        .testimonial__intro{
+            width: 100% !important;
+            height: 100%;
+            padding-top: 57px;
+        }
+
+        .testimonial__card{
+            width: 0 !important;
+            padding-top: -40px !important;
+
+            .testimonial__img{
+                top: 130px !important;
+                left: 100px !important;
+            }
+            .card{
+                width: 300px !important;
+            }
+        }
+    }
+}
+
+
+@media(max-width:670px){
+    #top_nav{
+        .nav_wrapper{
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+
+
+    /* hero area   */
+    .contents{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .hero_card{
+            margin-bottom: -280px !important;
+            width: 200px !important;      
+        }
+
+        .steering-wheel{
+            display: none !important;
+        }
+
+    }
+
+
+    /* location area   */
+    #location__area{
+        height: 500px;
+         .location__content{
+            flex-direction: column;
+            gap:50px;
+
+            .location__text, 
+            .location__img{
+                width: 100%;
+            }
+
+            .downloder__card{
+                right: 20px !important;
+            }
+         }
+    }
+
+ 
+}
+
+ 
+
+@media(max-width:767px){
+
+    /* hero area  */
+    .contents{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .hero_card{
+            margin-bottom: -180px !important;
+        }
+
+        .hero-text-side{
+            margin-top:100px;
+            width: 100%;
+             h1{
+                max-width: 500px !important;
+             }
+        }
+
+        .hero-right-side{
+            width: 100% !important;
+
+            .bg-green{
+                width: 50% !important;
+            }
+
+            .green-car{
+                margin-right:0 !important;
+            }
+        }
+    }
+
+     /* Driver area  */
+    #top__driver{
+        margin-top: 550px;
+    }
+
+
+    /* testimonial area  */
+    #testimonial{
+        padding: 0;
+        .testimonial__intro{
+            margin: 0 auto;
+        }
+
+        .testimonial__wrapper{
+            flex-direction: column;
+
+             .testimonial__card{
+                margin: 0 auto;
+                padding: 100px;
+            
+
+                .card2{
+                    display: none;
+                    position: relative;
+                }
+
+                .testimonial__img{
+                    position: absolute;
+                    top: 110px;
+                    left: 250px;
+                }
+             }
+        }
+    }
+
+
+    /* contact us section  */
+    #contact__us{
+        ul{
+            flex-direction: column;
+
+            p{
+                padding: 20px 0;
+            }
+            button{
+                width: 198px;
+                height: 50px !important;
+            }
+        }
+    }
+
+
+    /* Footer area  */
+    footer{
+        .footer__content{
+            padding-top: 100px;
+        }
+    }
+} 
+
+
+
+ @media(max-width:991px){
+
+    header{
+        #main_nav{
+            .nav_content{      
+                #nav_ul{
+                    transition: all .7s linear;
+                    width:300px;
+                    height: 170vh;
+                    flex-direction: column;
+                    background: rgb(0, 0, 0, .9);
+                    justify-content: center;
+                    padding-top: 200px;
+                    position: fixed;
+                    right: 0;
+                    display: none;
+                   
+                    .nav_item{
+                        margin-top: 40px !important;
+                        transform: translate(40%);
+                    }
+                }
+
+                /* user side  */
+                .user_side{
+                    margin: 0 auto;
+                }
+
+                
+            }
+        }
+
+
+        /* Hamburger menu  */
+        .open_menu{
+            display: block !important;
+        }
+        .close_menu{
+            display: block !important;
+            color: #ff0404;
+            position: absolute;
+            margin-top: -350px;
+            padding: 20px;
+             
+        }
+         
+        #check:checked ~ #nav_ul{
+           display: block;
+           
+        }
+        
+    }
+    
+
+
+    /* Hero area  */
+    #hero__area{
+        .hero-text-side{
+            h1{
+                font-size: 45px !important;
+            }
+            p{
+                font-size: 18px !important;
+            }
+        }
+
+    }
+} 
+
+
+ @media(max-width:1199px){
+    #hero__area{
+
+        .hero_card{
+             width: 400px;
+             margin-bottom: -80px;
+        }
+    }
+} 
+
+
+
+ @media(max-width:1400px){
+    #hero__area{
+
+        .hero_card{
+            position: absolute;
+            bottom:0% !important;
+        }
+    }
+} 
+
+
+
+

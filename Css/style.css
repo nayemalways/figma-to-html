@@ -1,0 +1,930 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+body{
+     font-family: 'poppins', sans-serif;
+     box-sizing: border-box;
+     min-height: 100vh;
+}
+
+/* ************* Common css **************  */
+:root{
+    --primary-color:#4AC87E;
+    --prime-color: #29AF60;
+    ---secondary-color:#646464;
+    --white: #fff;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 90%;
+   
+}
+img{
+    width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+p{
+    color: var(---secondary-color);
+}
+/* ************* Common css end **************  */
+
+
+/*********** HEADER SECTION DESIGN ************* */
+/* top nav design  */
+#top_nav{
+    background-color: var(--primary-color);
+    padding: 10px 0;
+    .nav_wrapper{
+        display: flex;
+        justify-content: space-between;
+
+        .contact_side{
+            display: flex;
+
+            P{
+                font-size: 14px;
+                font-weight: 300;
+                margin-right: 50px;
+                color: var(--white);
+                
+                i{
+                    font-size: 22px;
+                    vertical-align: middle;
+                    padding-right: 3px;
+                }
+            }
+        }
+
+        .social_side{
+            span{
+                color: var(--white);
+                font-size: 15px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            img{
+                width: 12px;
+                padding: 4px;
+                border-radius: 5px;
+                background-color: var(--white);
+                vertical-align: middle;
+                margin-left: 8px;
+                cursor: pointer;
+                transition: all .2s linear;
+
+                &:hover{
+                    background-color: rgb(100, 100, 100);
+                }
+            }
+            
+        }
+    }
+  
+}
+
+/*--------MAIN NAVIGATION BAR DESIGN START -------- */
+header{
+    position:sticky;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+
+    #main_nav{
+        width: 100%;
+        background-color: var(--white);
+        box-shadow: 0px 4px 21px 0px rgba(0, 0, 0, 0.08);
+        position: relative;
+
+        .nav_content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+           
+            /* logo  */
+            h2{
+                font-size: 32px;
+                font-weight: 500;
+                color:#232325;
+                text-transform: uppercase;
+                cursor: pointer;
+                span{
+                    color: var(--primary-color);
+                    font-size: 35px;
+                }
+                
+            }
+
+        
+            #nav_ul{
+                    align-content: center;
+                    display: flex;
+
+                     .nav_item{
+                        list-style-type: none;
+                        margin: 0 15px;
+
+                        .active{
+                            color: var(--primary-color) !important;
+                       }
+
+                        .nav_link{
+                            color: var(---secondary-color);
+                            font-size: 17px;
+                            font-weight: 500;
+                            transition: all .2s linear;
+                            &:hover{
+                            color: var(--primary-color);
+                            }
+                        }
+
+                    }
+            }
+            
+
+            /* user side  */
+            .user_side{
+                img{
+                    width: 18px;
+                    vertical-align: middle;
+                    padding-left: 15px;
+                    cursor: pointer;
+                }
+                span{
+                    width: 40px;
+                    margin-left: 15px;
+                    img{
+                        width: 35px;
+                        border: 1px solid var(--primary-color);
+                        border-radius: 50px;
+                        vertical-align: middle;
+                        padding: 0;
+                        cursor: pointer;
+                    }
+                    i{
+                       font-size: 20px;
+                       color: rgba(36, 36, 38, 0.44);
+                       padding-left: 8px;
+                       cursor: pointer;
+                    }
+                }
+            }
+
+
+
+            /* Hamburger menu design  */
+            #check{
+                visibility: hidden;
+            }
+            .open_menu,.close_menu{
+                position: absolute;
+                display: none;
+            }
+            .open_menu{
+                right: 50px;
+            }
+            .close_menu{
+                right: 20px;
+            }
+       
+        }
+
+       
+    }
+
+}
+/*--------MAIN NAVIGATION BAR DESIGN END -------- */
+
+/* <-- ---------HEADER AREA DESIGN START------- --> */
+#hero__area{
+    width: 100%;
+    padding-bottom: 100px;
+    .contents{
+        display: flex;
+        justify-content: space-between;
+        background: url(../Images/hero-bg.png);
+        background-position:center;
+        background-repeat: no-repeat;
+        position: relative;
+
+        /* --- hero area card design destionation start-- */
+        .hero_card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            position: absolute;
+            bottom:7%;
+            background:var(--white);
+            border-radius: 15px;
+            padding: 20px 30px;
+            box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+
+            p,label{
+                color:#3E3E3E;
+                font-weight: 500;
+                font-size: 16px;
+            }
+            label{
+                display: block;
+            }
+            
+             input,select{
+                border: none;
+                background-color:#F1F1F1;
+                border-radius: 5px;
+                padding: 5px 8px;
+               
+             }
+             input[type="date"]::-webkit-calendar-picker-indicator {
+                color: rgba(0, 0, 0, 0);
+                opacity: 1;
+                display: block;
+                background: url(../Images/calender.png), no-repeat;
+    
+            }
+            input[type="number"]{
+                width:30px ;
+                appearance: none;
+                background: url(../Images/user-icon.png), #F1F1F1;
+                text-align: center;
+                color: var(---secondary-color);
+                font-weight: bold;
+                background-repeat: no-repeat;
+                background-position: right;
+            }
+            input[type="number"]::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+            }
+             select{
+                appearance: none;
+                width: 150px;
+             }
+             select>option{
+                font-size: 12px;
+                font-weight: 400;
+                color: var(---secondary-color);
+                
+             }
+             button{
+                border: none;
+                outline: none;
+                background:var(--prime-color);
+                color: #fff;
+                padding: 12px 30px;
+                border-radius: 5px;
+                font-size: 16px;
+                font-weight: 500;
+                transform: translateY(5px);
+                transition: all .2s linear;
+
+                &:hover{
+                    background: var(---secondary-color);
+                    color: var(--primary-color);
+                }
+             }
+
+        }
+        /* ----- hero area card design destionation end---- */
+
+        /*---- hero area text side  start---*/
+        .hero-text-side{         
+            align-self: center;
+            h1{
+                font-size: 57px;
+                max-width: 350px;
+                font-weight: 600;
+                span{
+                    color: var(--primary-color);
+                }
+            }
+            p{
+                max-width: 410px;
+                padding: 20px 0;
+                font-size: 20px;
+            }
+            ul{
+                max-width: 210px;
+                list-style-type: none;
+                display: flex;
+               
+                li{
+                    margin-right: 10px;
+                }
+            }
+        }    
+        /*------ hero area text side end----------*/
+
+
+        /*------ hero area image side  start-------*/
+        .hero-right-side{
+            width: 50%;
+            height: 100vh;
+            min-height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* flex-shrink: 1; */
+            
+            .green-car{
+                 margin-right: 50px;
+                 min-width: 350px;
+            }
+            .steering-wheel{
+                width: 12%;
+                position: absolute;
+                bottom: -37px;
+                padding: 10px;
+                background-color: #fff;
+                border-radius: 50px;
+            }
+
+            .bg-green{
+                width: 70%;
+                min-width: 250px;
+                min-height: 90%;
+                margin: 0 auto;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%);
+                background: url(../Images/background-green.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                border-radius: 100px;
+                z-index: -1;
+
+                
+            }
+        }    
+        /*------ hero area text side end-----------*/
+    }
+}
+/* <-- ---------HEADER AREA DESIGN END------- --> */
+
+
+/* <!--------- ABOUT US AREA DESIGN START ---------> */
+#about__us{
+    .about__us__contents{
+        width: 100%;
+        height: 70vh;
+        padding: 150px 0;
+
+        /* ------- TEXT DESIGN ------ */
+        .about__intro{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 400px;
+            margin: 0 auto;
+
+            h2{
+                font-size: 30px;
+                font-weight: 600;
+                text-align: center;
+                line-height: 45px;
+                color:#232325;
+                
+            }
+            p{
+                font-size:20px;
+                font-weight: 400;
+                padding-top: 15px;
+            }
+        }
+
+        /* -------CARD DESIGN -----*/
+        .about__card{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+            align-items: center;
+            flex-wrap: wrap;
+            padding-top: 70px;
+
+            
+            .card1{
+                max-width: 280px;
+                padding: 40px 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                background: var(--white) ;
+                box-shadow: 0px 1px 1px rgba(138, 138, 138, 0.3), 
+                1px 0px 10px rgba(138, 138, 138, 0.3),  
+                1px 0px 20px rgba(138, 138, 138, 0.3);  
+                position: relative;
+
+                img{
+                    width: 25%;
+                }
+                h6{
+                    font-size: 17px;
+                    font-weight: 500;
+                    /* padding: 15px 0; */
+                    line-height: 50px;
+                    text-align: center;
+                }
+                p{
+                    font-size: 14px;
+                    text-align: center;
+                }
+                .green-shape{
+                    width: 70px;
+                    position: absolute;
+                    bottom: -15px;
+                    right: -15px;
+                    z-index: -10;
+                }
+            }
+            .card2,
+            .card3{
+                max-width: 280px;
+                padding: 40px 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                background:  #F9F9F9 ;
+                box-shadow: 0px 1px 1px rgba(138, 138, 138, 0.3), /* Bottom */
+                1px 0px 10px rgba(138, 138, 138, 0.3), /* Left */
+                1px 0px 20px rgba(138, 138, 138, 0.3); /* Right */
+                img{
+                    width: 25%;
+                }
+                h6{
+                    font-size: 17px;
+                    font-weight: 500;
+                    /* padding: 15px 0; */
+                    line-height: 50px;
+                    text-align: center;
+                }
+                p{
+                    font-size: 14px;
+                    text-align: center;
+                }
+            }
+
+            
+        }
+    }
+}
+/* <!--------- ABOUT US AREA DESIGN START ---------> */
+
+
+
+/* <!--------- DRIVER  AREA DESIGN START ---------> */
+#top__driver{
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+
+    .driver__area__content{
+        .driver__text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 400px;
+            margin: 0 auto;
+
+            h2{
+                font-size: 30px;
+                font-weight: 600;
+                text-align: center;
+                line-height: 45px;
+                color:#232325;
+                
+            }
+            p{
+                font-size:14px;
+                font-weight: 400;
+                padding-top: 15px;
+                text-align: center;
+            }
+        }
+
+        .driver__card{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 3%;
+            padding-top: 70px;
+
+            .card{
+                max-width: 242px;
+                height: 300px;
+                border-radius: 10px;
+                text-align: center;
+                background-color: rgba(219, 207, 207, 0.08);
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+                h5{
+                    font-size:22px;
+                    font-weight: 500;
+                    line-height: 33px;
+                }
+                .star-img{
+                    width: 50%;
+                }
+            }
+        }
+    }
+ }
+/* <!--------- DRIVER US AREA DESIGN END -----------> */
+
+
+/* <!--------- LOCATION AREA DESIGN START ---------> */
+ #location__area{
+    margin:100px 0;
+    width: 100%;
+    height: 200px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(91.77deg, #29AF60 20.45%, rgba(42, 177, 98, 0.67) 100%);
+    position: relative;
+
+     /* left side circle shape design  */
+     .shape-1{
+        max-width: 70px;
+     }
+     .shape-2{
+        max-width: 70px;
+         position: absolute;
+         top:20px;
+         left: 80px;
+     }
+   
+
+     /* main area content design   */
+    .location__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .location__text{
+            align-self: center;
+            width: 50%;
+
+            h2{
+                font-size: 36px;
+                font-weight: 600;
+                color: var(--white);
+            }
+            p{
+                font-size: 14px;
+                font-weight: 400;
+                text-wrap:wrap ;
+                color: var(--white);
+                padding: 1rem 0;
+               
+                
+            }
+            button{
+                border:none;
+                outline:none;
+                background-color: var(--white);
+                padding: 13px 25px;
+                border-radius:5px;
+                font-size: 12px;
+                font-weight: 400;
+                transition: all .2s linear;
+
+                &:hover{
+                    color: var(--primary-color);
+                }
+            }
+        }
+        
+        .location__img{
+            width: 50%;
+            position: relative;
+              img{
+                max-width: 500px;
+                transform: translateY(-5%);
+              }
+
+             /* right side app download design  */
+            .downloder__card{
+                background-color: #fff;
+                padding: 8px 25px;
+                border-radius: 5px;
+                position: absolute;
+                right: 0;
+                bottom: 1px;
+                box-shadow: -1px 12px 35px 0px rgba(0, 0, 0, 0.122);
+                h6{
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+                p{
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+        }
+         
+    }
+ }
+/* <!--------- LOCATION AREA DESIGN END -----------> */
+
+
+/* <!--------- TESTIMONIAL US AREA DESIGN START -----> */
+#testimonial{
+    padding: 100px 0;
+    .testimonial__wrapper{
+        margin: 0 auto;
+        max-width: 800px;
+        width: 90%;
+        height: 53vh;
+        display: flex;
+        justify-content: center;
+
+        .testimonial__intro{
+            width: 50%;
+            height: 100%;
+            padding-top: 57px;
+            p{
+                color: var(--primary-color);
+                font-size: 16px;
+                font-weight: 600;
+            }
+            h2{
+                font-size: 36px;
+                font-weight: 600;
+            }
+            ul{
+                display: flex;
+                margin-top: -30px;
+               .dot1{
+                    color: #000 ;
+                    list-style-type: none;
+                    font-size: 70px;
+                }         
+                .dot2, 
+                .dot3{
+                    list-style-type: none;
+                    font-size: 70px;
+                    color: #D9D9D9;
+                }
+            }
+        }
+
+        .testimonial__card{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            .testimonial__img{
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                border-radius: 50px;
+                position: absolute;
+                top: 40px;
+                left: 10px;
+                z-index: 3;
+                overflow: hidden;
+                img{
+                    width:100%;
+                    align-content: center;
+                }
+            } 
+            .card{
+                box-sizing: border-box;
+                padding: 20px 30px;
+                width:  350px;
+                height: 200px;
+                border-radius: 10px;
+                h6{
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                p{
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+            }   
+            .card1{               
+                background-color: var(--white);             
+                position: absolute;
+                z-index: 1;
+                box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+                blockquote{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: var(---secondary-color);
+                }
+                h6{
+                    line-height: 35px;
+                }
+               
+            }
+            .card2{
+                 
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-end;
+                flex-shrink: 0;
+                border: 1px solid #000;
+                background-color:rgba(187, 187, 187, 0.1);      
+                text-align: center;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+               
+            }
+           
+        }
+    }
+}
+/* <!--------- TESTIMONIAL US AREA DESIGN END -------> */
+
+
+
+/* <!---------CONTACT US AREA DESIGN START----------->  */
+#contact__us{
+    transform: translateY(50%);
+    .contact__content{
+        ul{
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             padding: 50px 70px;
+             border-radius: 10px;
+             background: linear-gradient(90deg, #87E8AF 4.7%, #AED5BE 94.54%);
+            li{
+                list-style-type: none;
+               h2{
+                color: #232325;
+                font-size: 28px;
+                font-weight: 600;
+               }
+               p{
+                font-size: 14px;
+                font-weight: 400;
+                max-width: 600px;
+               }
+
+               button{
+                font-size: 18px;
+                font-weight: 400;
+                border: none;
+                outline: none;
+                background-color: var(--prime-color);
+                color:var(--white);
+                width: 198px;
+                height: 70px;
+                border-radius: 5px;
+                transition: all .3s linear;
+
+                &:hover{
+                    color: var(--prime-color);
+                    background-color: var(--white);
+                    border: 2px solid var(--prime-color);
+                }
+               }
+            }
+        }
+    }
+}
+/* <!---------CONTACT US AREA DESIGN End ------------->  */
+
+
+
+ /* <!---------FOOTER AREA DESIGN START ----------->  */
+  footer{
+    width: 100%;
+    padding-top: 150px;
+    background:#2B2B2B;
+    .footer__content{
+        
+        .top__content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap:20px;
+            flex-wrap: wrap;
+
+            .common__design{
+                max-width: 242px;
+                min-width: 200px;
+            }                
+            .logo__area{
+                
+                h1{
+                    font-size: 32px;
+                    font-weight: 500;
+                    color:var(--white);
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    span{
+                        color: var(--primary-color);
+                        font-size: 35px;
+                    }
+                }
+                p{
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: rgb(255, 255, 255,0.8);
+                    padding: 30px 0;
+                    
+                    
+                }
+            
+            }
+
+            .link,.about__us,.contact{  
+                align-self: center;
+                h2{
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: var(--white);
+                    padding-bottom: 50px;
+                }
+                ul{
+                    li{
+                        list-style-type: none;
+                        margin-bottom: 25px;
+
+                        a{
+                            color: rgb(255, 255, 255,0.8);
+                        }
+                    }
+                }
+            }
+            .contact{
+                p{
+                    color: rgb(255, 255, 255,0.8);
+                }
+            }
+        }
+
+             /* footer bootom : Copy right part  */
+        .bottom__content{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap ;
+                border-top: 1px solid rgb(255, 255, 255,0.8);
+                padding: 50px 0;
+                .copyright__text{
+                    p{
+                        color: rgb(255, 255, 255,0.8);
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                }
+                .social__link{               
+                    ul{
+                        li{
+                            list-style-type: none;
+                            display: inline-block;
+                            img{
+                                width: 15px;
+                                margin-right: 20px;
+                                cursor: pointer;
+                            }
+                        }
+                       
+                    }
+                }
+        }
+    }
+}
+ /* <!---------FOOTER AREA DESIGN End ------------->  */
+
+ 
+
