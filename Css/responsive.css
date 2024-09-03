@@ -95,6 +95,7 @@
     /* location area   */
     #location__area{
         height: 500px;
+        margin-top: -550px;
          .location__content{
             flex-direction: column;
             gap:50px;
