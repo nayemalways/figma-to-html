@@ -1,4 +1,5 @@
 @medai(max-width:340px){
+    /* hero area  */
     #hero__area{
         .hero-right-side{
             .green-car{
@@ -264,6 +265,7 @@
         /* Hamburger menu  */
         .open_menu{
             display: block !important;
+            right: 7% !important ;
         }
         .close_menu{
             display: block !important;
