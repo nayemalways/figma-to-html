@@ -74,6 +74,14 @@
 
     }
 
+    /* Top driver area  */
+    #top__driver{
+        .driver__card{
+            .card{
+                margin-top: 15px;
+            }
+        }
+    }
 
     /* location area   */
     #location__area{
