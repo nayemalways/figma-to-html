@@ -1,11 +1,18 @@
-@medai(max-width:340px){
-    /* hero area  */
-    #hero__area{
-        .hero-right-side{
-            .green-car{
-                width: 300px !important;
+@media(max-width:340px){
+
+    /* main nav area  */
+    header{   
+         #main_nav{
+            .nav_content{
+                 .user_side{
+                    span{
+                        i{
+                            display:none;
+                        }
+                    }
+                 }
             }
-        }
+        } 
     }
 }
 
@@ -265,7 +272,7 @@
         /* Hamburger menu  */
         .open_menu{
             display: block !important;
-            right: 7% !important ;
+            right: 5% !important ;
         }
         .close_menu{
             display: block !important;
