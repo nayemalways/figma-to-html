@@ -4,8 +4,18 @@
     /* Top nav design  */
     #top_nav{
         .nav_wrapper{
+            flex-direction: column;
+            align-items: flex-start !important;
             .contact_side{
                 margin: 0 auto;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+            .social_side{
+                span{
+                    
+                    
+                }
             }
         }
     }
