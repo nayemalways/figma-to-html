@@ -422,9 +422,8 @@ header{
             height: auto;
             display: flex;
             justify-content: space-between;
-            gap: 50px;
+            gap: 30px;
             align-items: center;
-            flex-wrap: wrap;
             padding-top: 70px;
 
             
@@ -483,7 +482,6 @@ header{
                 h6{
                     font-size: 17px;
                     font-weight: 500;
-                    /* padding: 15px 0; */
                     line-height: 50px;
                     text-align: center;
                 }
