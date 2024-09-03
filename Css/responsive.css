@@ -111,7 +111,10 @@
          }
     }
 
- 
+    /* testimonial area  */
+    #testimonial{
+        padding:100px 0 !important;
+    }
 }
 
  
