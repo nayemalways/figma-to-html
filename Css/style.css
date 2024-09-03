@@ -230,6 +230,7 @@ header{
             background:var(--white);
             border-radius: 15px;
             padding: 20px 30px;
+            z-index: 2;
             box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
 
             p,label{
@@ -289,12 +290,14 @@ header{
                 border-radius: 5px;
                 font-size: 16px;
                 font-weight: 500;
+                cursor: pointer;
                 transform: translateY(5px);
                 transition: all .2s linear;
 
                 &:hover{
-                    background: var(---secondary-color);
+                    background: var(--white);
                     color: var(--primary-color);
+                    border: 1px solid var(--prime-color);
                 }
              }
 
