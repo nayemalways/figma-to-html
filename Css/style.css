@@ -408,7 +408,7 @@ header{
                 
             }
             p{
-                font-size:20px;
+                font-size:14px;
                 font-weight: 400;
                 padding-top: 15px;
             }
@@ -590,7 +590,6 @@ header{
          left: 80px;
      }
    
-
      /* main area content design   */
     .location__content{
         display: flex;

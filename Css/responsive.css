@@ -28,12 +28,6 @@
                 flex-wrap: wrap;
                 gap: 20px;
             }
-            .social_side{
-                span{
-                    
-                    
-                }
-            }
         }
     }
 
@@ -49,16 +43,50 @@
        } 
    }
 
-
-    /* hero area  */
+    /* hero area design  */
     #hero__area{
-        .hero-right-side{
-            .green-car{
-                width: 300px !important;
+        .contents{
+            .hero-text-side{
+                h1{
+                    font-size: 40px !important;
+                }
+            }
+            .hero-right-side{
+                .green-car{
+                    width: 300px !important;
+                }
             }
         }
+       
     }
 
+   /* about us area  */
+   #about__us{
+    .about__us__contents{
+        .about__intro{
+             h2{
+                font-size: 24px;
+             }
+        }
+    }
+   }
+ 
+
+   /* location area  */
+   #location__area{
+        padding: 0;
+        .shape-2{
+            top:auto;
+        }
+
+        .location__content{
+            .location__text{
+                h2{
+                    font-size: 24px;
+                }
+            }
+        }
+   }
 
     /* testimonial area  */
     #testimonial{
@@ -68,6 +96,10 @@
             width: 100% !important;
             height: 100%;
             padding-top: 57px;
+
+            h2{
+                font-size: 24px !important;
+            }
         }
 
         .testimonial__card{
@@ -83,6 +115,16 @@
             }
         }
     }
+
+    /* contact area area  */
+    #contact__us{
+        .contact__content{
+            h2{
+                font-size: 24px  ;
+            }
+        }
+    }
+
 }
 
 
