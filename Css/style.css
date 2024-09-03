@@ -125,8 +125,8 @@ header{
                 }
                 
             }
-
-        
+          
+            /* nav link  */
             #nav_ul{
                     align-content: center;
                     display: flex;
@@ -152,7 +152,6 @@ header{
                     }
             }
             
-
             /* user side  */
             .user_side{
                 img{
