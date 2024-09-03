@@ -346,11 +346,10 @@ header{
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            /* flex-shrink: 1; */
             
             .green-car{
                  margin-right: 50px;
-                 min-width: 350px;
+                 min-width: 300px;
             }
             .steering-wheel{
                 width: 12%;

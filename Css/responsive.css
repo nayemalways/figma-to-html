@@ -1,6 +1,15 @@
+@medai(max-width:340px){
+    #hero__area{
+        .hero-right-side{
+            .green-car{
+                width: 300px !important;
+            }
+        }
+    }
+}
+
+
 @media(max-width:400px){
-
-
     /* Top nav design  */
     #top_nav{
         .nav_wrapper{
