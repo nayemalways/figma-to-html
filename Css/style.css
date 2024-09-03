@@ -503,8 +503,7 @@ header{
 #top__driver{
     width: 100%;
     height: auto;
-    padding: 100px 0;
-
+    
     .driver__area__content{
         .driver__text{
             display: flex;
